@@ -22,7 +22,7 @@ export default function ResultModal({
   });
 
   return createPortal(
-    <dialog ref={dialog} className="result-modal" open onClose={onReset}>
+    <dialog ref={dialog} className="result-modal" onClose={onReset}>
       {userLost ? <h2>You Lost</h2> : <h2>Your score: {score}</h2>}
       <p>
         The target time was
